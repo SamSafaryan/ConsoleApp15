@@ -19,12 +19,13 @@
             while (Number > 0)
             {
                 number = Number %= 10;
-                for(int i = 0; i < Count; i++)
+                
+                for (int i = 0; i < Count; i++)
                 {
                     Mult *= number;
                     Sum += Mult;
                 }
-                number = Number /= 10;
+                Number /= 10;
             }
             Console.WriteLine(Sum);
             if (Sum == Number)
